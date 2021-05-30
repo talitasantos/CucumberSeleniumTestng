@@ -101,6 +101,26 @@
 								<resource>
 									<directory>src/test/resources</directory>
 									<filtering>true</filtering>
+									<excludes>
+										<exclude>**/*.feature</exclude>
+									</excludes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					<execution>
+						<id>copy-resources-features</id>
+						<!-- here the phase you need -->
+						<phase>validate</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/src/test/resources/features</outputDirectory>
+							<resources>
+								<resource>
+									<directory>src/test/resources/features</directory>
+									<filtering>true</filtering>
 								</resource>
 							</resources>
 						</configuration>
