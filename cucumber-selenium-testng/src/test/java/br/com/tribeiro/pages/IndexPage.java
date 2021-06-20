@@ -17,7 +17,7 @@ public class IndexPage extends BaseTest {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(css = "#header > div.nav > div > div > nav > div.header_user_info > a")
+	@FindBy(css = "a[class='login'][title='Log in to your customer account']")
 	private WebElement signInButton;
 	
 	public void clickSignInBtn() {

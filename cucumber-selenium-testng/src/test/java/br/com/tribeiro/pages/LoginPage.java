@@ -11,13 +11,13 @@ public class LoginPage extends BaseTest {
 
 	private WebDriver driver;
 	
-	@FindBy(id = "SubmitCreate")
+	@FindBy(css = "button[type='submit'][id='SubmitCreate']")
 	private WebElement createAnAccountButton;
 
-	@FindBy(id = "email_create")
+	@FindBy(css = "input[type='text'][id='email_create']")
 	private WebElement emailAddressLeftInput;
 
-	@FindBy(css = "email")
+	@FindBy(css = "input[type='text'][id='email']")
 	private WebElement emailAddressRightInput;
 
 	public LoginPage(WebDriver driver) {

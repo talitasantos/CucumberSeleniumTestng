@@ -10,7 +10,7 @@ Feature: Authentication
 
   @successfullyCreateAnAccount
   Scenario: Title of your scenario
-    Given I entered a valid email address "tribeiro2310@email.com"
+    Given I entered a valid email address "tribeiroYY@email.com"
     When I click create an account
     And select title
     And fill first name "Talita"

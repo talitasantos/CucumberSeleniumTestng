@@ -19,62 +19,63 @@ public class CreateAnAccountPage extends BaseTest {
 		PageFactory.initElements(driver, this);
 
 	}
+	
+	/* PERSONAL INFORMATION */
 
-	@FindBy(id = "id_gender2")
+	@FindBy(css = "input[type='radio'][name='id_gender'][id='id_gender2']")
 	private WebElement titleRadio;
 
-	@FindBy(id = "customer_firstname")
+	@FindBy(css = "input[type='text'][id='customer_firstname'][name='customer_firstname']")
 	private WebElement firstNameInput;
 
-	@FindBy(id = "customer_lastname")
+	@FindBy(css = "input[type='text'][id='customer_lastname'][name='customer_lastname']")
 	private WebElement lastNameInput;
 
-	@FindBy(id = "passwd")
+	@FindBy(css = "input[type='password'][id='passwd'][name='passwd']")
 	private WebElement passwordInput;
 	
-	@FindBy(id = "days")
+	@FindBy(css = "select[id='days'][name='days']")
 	private WebElement daySelect;
 	
-	@FindBy(id = "months")
+	@FindBy(css = "select[id='months'][name='months']")
 	private WebElement monthSelect;
 	
-	@FindBy(id = "years")
+	@FindBy(css = "select[id='years'][name='years']")
 	private WebElement yearSelect;
 
-	@FindBy(id = "company")
-	private WebElement dateOfBirthDate;
-
-	@FindBy(id = "newsletter")
+	@FindBy(css = "input[type='checkbox'][name='newsletter'][id='newsletter']")
 	private WebElement newsletterCheckbox;
 	
-	@FindBy(id = "company")
+	/* ADDRESS INFORMATION */
+	
+	@FindBy(css = "input[type='text'][id='company'][name='company']")
 	private WebElement companyInput;
 
-	@FindBy(id = "address1")
+	@FindBy(css = "input[type='text'][id='address1'][name='address1']")
 	private WebElement addressInput;
 
-	@FindBy(id = "address2")
+	@FindBy(css = "input[type='text'][id='address2'][name='address2']")
 	private WebElement alternativeAddressInput;
 
-	@FindBy(id = "city")
+	@FindBy(css = "input[type='text'][id='city'][name='city']")
 	private WebElement cityInput;
 
-	@FindBy(id = "id_state")
+	@FindBy(css = "select[name='id_state'][id='id_state']")
 	private WebElement stateSelect;
 
-	@FindBy(id = "postcode")
+	@FindBy(css = "input[type='text'][name='postcode'][id='postcode']")
 	private WebElement postalCodeInput;
 
-	@FindBy(id = "phone")
+	@FindBy(css = "input[type='text'][id='phone'][name='phone']")
 	private WebElement homePhoneInput;
 
-	@FindBy(id = "phone_mobile")
+	@FindBy(css = "input[type='text'][id='phone_mobile'][name='phone_mobile']")
 	private WebElement mobilePhoneInput;
 
-	@FindBy(id = "alias")
+	@FindBy(css = "input[type='text'][id='alias'][name='alias']")
 	private WebElement aliasInput;
 
-	@FindBy(id = "submitAccount")
+	@FindBy(css = "button[type='submit'][id='submitAccount'][name='submitAccount']")
 	private WebElement registerBtn;
 
 	public void selectTitle() {
